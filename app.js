@@ -3,7 +3,7 @@ const open = require('open');
 
 const redis = require("redis");
 const client = redis.createClient();
-
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -149,6 +149,6 @@ app.get('/flush', (req, res) => {
     });
 });
 
-open("http://localhost:3000/");
+open("http://localhost:"+PORT);
 
-app.listen(3000);
+app.listen(PORT);
