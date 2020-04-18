@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unacademy project</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {background-color:#f5f5f5;}
+        </style>
+</head>
+
+<body>
+    <center>
+        <h1>Unacademy SDE1 Coding Test</h1>
+    </center>
+    <Table border="0" cellpadding="10">
+        <tr>
+            <td>
+                <strong>
+                    SET METHOD
+                </strong>
+            </td>
+            <form action='/set' method="get">
+                <td>
+                    <input type='text' placeholder="enter key" name="key" id="key">
+                </td>
+                <td>
+                    <input type='text' placeholder="enter value" name="value" id="value">
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    GET METHOD
+                </strong>
+            </td>
+            <form action='/get' method="get">
+                <td>
+                    <input type='text' placeholder="enter key" name="key" id="key">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    EXPIRE
+                </strong>
+            </td>
+            <form action='/expire' method="get">
+                <td>
+                    <input type='text' placeholder="enter key" name="key" id="key">
+                </td>
+                <td>
+                    <input type='text' placeholder="enter Time" name="value" id="value">
+                </td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    GET TIME REMAINING TO EXPIRE
+                </strong>
+            </td>
+            <form action='/remaining' method="get">
+                <td>
+                    <input type='text' placeholder="enter key" name="key" id="key">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    ZADD (Add element in sorted set)
+                </strong>
+            </td>
+            <form action='/zadd' method="get">
+                <td>
+                    <input type='text' placeholder="enter set name" name="name" id="name">
+                </td>
+
+                <td>
+                    <input type='text' placeholder="enter score" name="score" id="score">
+                </td>
+
+                <td>
+                    <input type='text' placeholder="enter element" name="value" id="value">
+                </td>
+                <td></td>
+
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    ZRANK (Rank of an element in sorted set)
+                </strong>
+            </td>
+            <form action='/zrank' method="get">
+                <td>
+                    <input type='text' placeholder="enter set name" name="name" id="name">
+                </td>
+                <td>
+                    <input type='text' placeholder="enter element" name="value" id="value">
+                </td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    ZRANGE (Range of elements in sorted set)
+                </strong>
+            </td>
+            <form action='/zrange' method="get">
+                <td>
+                    <input type='text' placeholder="enter set name" name="name" id="name">
+                </td>
+                <td>
+                    <input type='text' placeholder="enter starting range" name="start" id="start">
+                </td>
+                <td>
+                    <input type='text' placeholder="enter end range" name="end" id="end">
+                </td>
+                <td>
+                    <input type='checkbox' value="true" name="withscores" id="withscores">
+                    <label for="withscores"> With Scores?</label>
+                </td>
+                <td>
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    FLUSH DATABASE
+                </strong>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <form action='/flush' method="get">
+                    <button type='submit'>
+                        Submit
+                    </button>
+                </form>
+            </td>
+        </tr>
+        
+    </Table>
+<br>
+<br>
+        <center style="color: green;">
+            <h4>
+            <%= reply %>
+            </h4>
+        </center>
+</body>
+
+</html>

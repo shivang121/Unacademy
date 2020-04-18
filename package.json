@@ -1,0 +1,29 @@
+{
+  "name": "unacademy",
+  "version": "1.0.0",
+  "description": "UnAcademy Test",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivang121/Unacademy.git"
+  },
+  "author": "SHIVANG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shivang121/Unacademy/issues"
+  },
+  "homepage": "https://github.com/shivang121/Unacademy#readme",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "open": "^7.0.3",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
