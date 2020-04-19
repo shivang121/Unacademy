@@ -10,3 +10,5 @@ npm start
 ```
 
 This would open the http://localhost:3000/ on your Default browser
+
+Visit the app hosted on https://unacademy-redis.herokuapp.com/ and perform the mentioned tasks.
