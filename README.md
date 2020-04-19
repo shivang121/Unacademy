@@ -3,7 +3,7 @@ A working implementation of redis with some basic functionalities
 
 ###### prerequisits: Node.js, redis
 
-To run the app:
+To run the app start **redis-server** then follow then follow bellow commands:
 ```javascript
 npm install
 npm start
